@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minimalist Buttons</title>
+	<style>
+		/* Переменные для основных цветов */
+		:root {
+			--primary-color: #007bff;
+			--success-color: #28a745;
+			--error-color: #dc3545;
+			--text-color: #ffffff;
+			--bg-color: #121212;
+			--border-radius: 4px;
+			--font-size: 14px;
+			--padding: 8px 16px;
+		}
+
+		/* Базовые стили для страницы */
+		body {
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			font-family: Arial, sans-serif;
+		}
+
+		/* Базовые стили для кнопок */
+		.button {
+			font-size: var(--font-size);
+			padding: var(--padding);
+			border-radius: var(--border-radius);
+			color: var(--text-color);
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer;
+			border: none;
+			margin: 0 8px;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+		.button:hover {
+			transform: scale(1.05);
+		}
+
+		.button:active {
+			transform: scale(0.95);
+		}
+
+		/* Стили для различных типов кнопок */
+		.button-primary {
+			background-color: var(--primary-color);
+		}
+
+		.button-primary:hover {
+			background-color: #0056b3;
+		}
+
+		.button-success {
+			background-color: var(--success-color);
+		}
+
+		.button-success:hover {
+			background-color: #218838;
+		}
+
+		.button-error {
+			background-color: var(--error-color);
+		}
+
+		.button-error:hover {
+			background-color: #c82333;
+		}
+	</style>
+</head>
+
+<body>
+	<button class="button button-primary">Primary</button>
+	<button class="button button-success">Success</button>
+	<button class="button button-error">Error</button>
+</body>
+
+</html>
