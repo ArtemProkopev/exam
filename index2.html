@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dynamic Buttons</title>
+	<style>
+		/* SASS скомпилированный в CSS */
+		:root {
+			--text-color: #e0e0e0;
+			--bg-color: #1a1a1a;
+			--border-radius: 4px;
+			--font-size: 14px;
+			--padding: 8px 16px;
+		}
+
+		body {
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			font-family: Arial, sans-serif;
+		}
+
+		.button {
+			font-size: var(--font-size);
+			padding: var(--padding);
+			border-radius: var(--border-radius);
+			color: var(--text-color);
+			text-align: center;
+			text-decoration: none;
+			cursor: pointer;
+			border: none;
+			margin: 8px;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+		.button:hover {
+			transform: scale(1.05);
+		}
+
+		.button:active {
+			transform: scale(0.95);
+		}
+
+		/* Генерируем стили для кнопок */
+		.button-primary {
+			background-color: #5a87d6;
+		}
+
+		.button-primary:hover {
+			background-color: #476dac;
+		}
+
+		.button-success {
+			background-color: #4caf50;
+		}
+
+		.button-success:hover {
+			background-color: #3d8a40;
+		}
+
+		.button-error {
+			background-color: #e57373;
+		}
+
+		.button-error:hover {
+			background-color: #c06262;
+		}
+
+		.button-warning {
+			background-color: #ffb74d;
+		}
+
+		.button-warning:hover {
+			background-color: #e69a3c;
+		}
+
+		.button-info {
+			background-color: #64b5f6;
+		}
+
+		.button-info:hover {
+			background-color: #5192c2;
+		}
+
+		.button-dark {
+			background-color: #616161;
+		}
+
+		.button-dark:hover {
+			background-color: #4d4d4d;
+		}
+	</style>
+</head>
+
+<body>
+	<button class="button button-primary">Primary</button>
+	<button class="button button-success">Success</button>
+	<button class="button button-error">Error</button>
+	<button class="button button-warning">Warning</button>
+	<button class="button button-info">Info</button>
+	<button class="button button-dark">Dark</button>
+</body>
+
+</html>
